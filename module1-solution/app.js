@@ -8,25 +8,28 @@ function LunchCheckController($scope){
   $scope.listFood = '';
   $scope.resultChecking = '';
   $scope.itemEmpty = '';
-  //setMessageColor("black");
-  //setBoderTextBoxColor("solid 1px black");
 
-
+  /*
+    Process for event button click
+  */
   $scope.checkList = function () {
     $scope.itemEmpty = '';
 
+    //Set color for Message
     var setMessageColor = function (colorName){
       $scope.myObject = {
         "color": colorName
       };
     };
 
+    //Set colar boder for TextBox
     var setBoderTextBoxColor = function (value){
       $scope.myObjectTextBox = {
         "border": value
       };
     };
 
+    //Count all items are validate
     var countItemsValidate = function (array){
       var count = 0;
       var empty = 0;
@@ -45,7 +48,6 @@ function LunchCheckController($scope){
       return count;
     };
 
-    console.log($scope.listFood);
     if($scope.listFood == null || $scope.listFood == ''){
       $scope.resultChecking = 'Please enter data first';
       setMessageColor("red");
