@@ -14,7 +14,7 @@
      <h2></h2>
        <input style="text" ng-model="narrowItDown.searchTerm" placeholder="Please input charactor!">
        <button ng-click="narrowItDown.click()">Narrow It Down For Me!</button>
-       <div><span ng-if="narrowItDown.checkError()">Not found</span></div>
+       <div><span ng-if="narrowItDown.checkError()">Nothing found</span></div>
      <div>
        <item-list my-narrow="narrowItDown"></item-list>
      </div>
