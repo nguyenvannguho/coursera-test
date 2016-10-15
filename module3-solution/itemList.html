@@ -1,0 +1,8 @@
+<table>
+  <tr ng-repeat="item in narrowItDown.itemList">
+    <td >Name {{item.name}} </td>
+    <td>{{item.short_name}} </td>
+    <td>{{item.description}} </td>
+    <td><button ng-click="narrowItDown.Cancel($index)">Don't want this one!</button></td>
+  </tr>
+</table>

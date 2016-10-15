@@ -1,0 +1,26 @@
+<!doctype html>
+<html ng-app="NarrowItDownApp">
+  <head>
+    <title>Search Item</title>
+    <script src="angular.min.js"></script>
+    <script src="app.js"></script>
+  </head>
+<body>
+  <div>
+  <h1>Search List</h1>
+
+  <div>
+    <div ng-controller="NarrowItDownController as narrowItDown">
+     <h2></h2>
+       <input style="text" ng-model="narrowItDown.searchTerm" placeholder="Please input charactor!">
+       <button ng-click="narrowItDown.click()">Narrow It Down For Me!</button>
+       <div><span ng-if="narrowItDown.checkError()">Not found</span></div>
+     <div>
+       <item-list my-narrow="narrowItDown"></item-list>
+     </div>
+    </div>
+  </div>
+</div>
+
+</body>
+</html>
