@@ -1,0 +1,10 @@
+<div>
+  <div ng-repeat="item in $ctrl.items">
+    <!-- <a ui-sref="items({shortName: item.short_name})"> -->
+    <span>{{item.id}} |</span>
+    <span >{{item.name}} |</span>
+    <span>{{item.short_name}} |</span>
+    </a>
+  </div>
+</div>
+<div ng-if="$ctrl.showItem()">Have Data</div>

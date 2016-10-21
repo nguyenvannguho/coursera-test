@@ -1,0 +1,14 @@
+<div>
+  <div ng-repeat="item in $ctrl.items">
+    <span ng-show="item.id.length > 0">{{item.id}} |</span>
+    <span ng-show="item.short_name.length > 0">{{item.short_name}} |</span>
+    <span ng-show="item.name.length > 0">{{item.name}} |</span>
+    <span ng-show="item.description.length > 0">{{item.description}} |</span>
+    <span ng-show="item.price_small.length > 0">{{item.price_small}} |</span>
+    <span ng-show="item.price_large.length > 0">{{item.price_large}} |</span>
+    <span ng-show="item.small_portion_name.length > 0">{{item.small_portion_name}} |</span>
+    <span ng-show="item.large_portion_name.length > 0">{{item.large_portion_name}}</span>
+    </a>
+  </div>
+</div>
+<div ng-if="$ctrl.showItem()">Have Data</div>
