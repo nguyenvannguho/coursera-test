@@ -1,0 +1,49 @@
+.row {
+}
+.row > div {
+}
+
+.padding-space {
+  background-color: gray;
+  margin-top: 25px;
+  border: 2px solid black;
+  box-sizing: padding-box;
+}
+
+#title {
+  width: 100%;
+  text-align: center;
+}
+
+.categories {
+  height: 100%;
+  width: 30%;
+  text-align: center;
+}
+
+#beef {
+  border: 2px solid black;
+  background-color: red;
+  box-sizing: border-box;
+  float: right;
+}
+
+#chicken {
+  border: 2px solid black;
+  background-color: pink;
+  box-sizing: border-box;
+  float: right;
+}
+
+#susi {
+  border: 2px solid black;
+  background-color: yellow;
+  box-sizing: border-box;
+  float: right;
+}
+
+.content {
+  display: inline-block;
+  padding-left: 10px;
+  padding-bottom: 10px;
+}
