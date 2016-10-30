@@ -7,11 +7,11 @@ angular.module('public')
 SignUpController.$inject = ['DataServiceProcessing', 'StoreDataService', '$scope'];
 function SignUpController(DataServiceProcessing, StoreDataService, $scope) {
   var signup = this;
-  signup.firstName = '';
-  signup.lastName = '';
-  signup.email = '';
-  signup.phone = '';
-  signup.shortName = '';
+  signup.firstName = 'A';
+  signup.lastName = 'A';
+  signup.email = 'A@a';
+  signup.phone = '111-111-1111';
+  signup.shortName = 'A1';
   signup.dataShortName = '';
   signup.showErrorShortName = false;
   signup.submitSuccess = false;
