@@ -16,17 +16,17 @@ function SignUpController(DataServiceProcessing, StoreDataService, $scope) {
   signup.showErrorShortName = false;
   signup.submitSuccess = false;
 
-  signup.initialize = function () {
-    if (StoreDataService.checkDataRegister() === true) {
-      var data = StoreDataService.getDataRegister();
-      signup.firstName = data.firstName;
-      signup.lastName = data.lastName;
-      signup.email = data.email;
-      signup.phone = data.phone;
-      signup.shortName = data.shortName;
-      signup.dataShortName = data.dataShortName;
-    }
-  };
+  // signup.initialize = function () {
+  //   if (StoreDataService.checkDataRegister() === true) {
+  //     var data = StoreDataService.getDataRegister();
+  //     signup.firstName = data.firstName;
+  //     signup.lastName = data.lastName;
+  //     signup.email = data.email;
+  //     signup.phone = data.phone;
+  //     signup.shortName = data.shortName;
+  //     signup.dataShortName = data.dataShortName;
+  //   }
+  // };
   signup.loseFocus = function () {
     DataServiceProcessing.getShortName(signup.shortName).then(function(data) {
       if(data === 404 || data === 500) {
@@ -71,7 +71,7 @@ function SignUpController(DataServiceProcessing, StoreDataService, $scope) {
     }
   };
 
-  signup.initialize();
+  // signup.initialize();
 }
 
 })();
