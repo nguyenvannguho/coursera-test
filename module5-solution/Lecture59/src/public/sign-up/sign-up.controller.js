@@ -51,7 +51,7 @@ function SignUpController(DataServiceProcessing, StoreDataService, $scope) {
       signup.submitSuccess = true;
     } else {
       DataServiceProcessing.getShortName(signup.shortName).then(function(data) {
-        if(data === 404 || data === 500) {
+        if(data === 404 || data === 500 || data === -1) {
           signup.showErrorShortName = true;
         } else {
           signup.showErrorShortName = false;
