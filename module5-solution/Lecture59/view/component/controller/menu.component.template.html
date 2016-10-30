@@ -1,0 +1,6 @@
+<div ng-repeat="item in $ctrl.items">
+  <img src="{{$ctrl.getPatchImage(item.category_short_name)}}" alt="{{item.name}}"/>
+  <span>ID: {{item.id}}</span><br>
+  <span >TITTLE: {{item.name}}</span><br>
+  <span>DESCRIPTION: {{item.description}}</span>
+</div>

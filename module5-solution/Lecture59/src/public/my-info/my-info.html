@@ -1,0 +1,34 @@
+<div class="my-info">
+  <div ng-if="myInfoCtrl.existRegister == true">
+    <h1> Information Registered </h1>
+    <span>
+      First Name: {{myInfoCtrl.firstName}}
+    </span>
+    <br>
+
+    <span>
+      Last Name: {{myInfoCtrl.lastName}}
+    </span>
+    <br>
+
+      <span>
+        Email Address: {{myInfoCtrl.email}}
+      </span>
+      <br>
+
+      <span>
+        Phone Number: {{myInfoCtrl.phone}}
+      </span>
+      <br>
+
+    <span>
+      Favorite Choice: {{myInfoCtrl.shortName}}
+    </span>
+
+    <menu-list items="myInfoCtrl.dataShortName"></menu-list>
+  </div>
+
+  <div ng-if="myInfoCtrl.existRegister == false">
+    <span>Not Signed Up Yet. <a ui-sref="public.signup">Sign up Now!</a></span>
+  </div>
+<div>
